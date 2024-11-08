@@ -1,11 +1,25 @@
 @import './base.css';
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url('/home/alumnat/PycharmProjects/untitled/360_F_428833035_BDo0pMjhuQalr8ifzjGxocLWNifEtz4u.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: white; /* Ensure a default background color */
+  display: flex;
+  flex-direction: column;
+}
+
 #app {
+  flex: 1;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
-  background: linear-gradient(to bottom right, #eeeeee, #eeeeee);
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background to make text readable */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -44,13 +58,6 @@ a:hover,
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-  }
-
   #app {
     display: grid;
     grid-template-columns: 1fr;

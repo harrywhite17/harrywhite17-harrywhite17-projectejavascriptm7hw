@@ -4,7 +4,7 @@
       <h1 class="title animate-fade-in">Benvingut al Meu Projecte</h1>
       <p class="subtitle">
         Descobreix la meva aplicació SPA amb Vue.js, dissenyada per oferir eines com una calculadora interactiva,
-        integracions en temps real amb APIs, i més, en un format intuïtiu i eficient.
+        integracions en temps real amb APIs, gestió d'usuaris, i una secció de comentaris, tot en un format intuïtiu i eficient.
       </p>
     </header>
 
@@ -17,7 +17,19 @@
         <h2 class="feature-title">Integracions d'API</h2>
         <p class="feature-description">Integrat amb APIs en temps real per obtenir i mostrar dades dinàmiques.</p>
       </div>
-
+      <div class="feature-card">
+        <h2 class="feature-title">Gestió d'Usuaris</h2>
+        <p class="feature-description">
+          Visualitza informació detallada sobre usuaris com noms, correus electrònics i telèfons, amb dades recollides de fonts externes.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h2 class="feature-title">Comentaris d'Usuaris</h2>
+        <p class="feature-description">
+          Una secció de comentaris on es poden veure missatges dels usuaris, incloent detalls com noms i correus electrònics,
+          per fomentar la interacció dins de l’aplicació.
+        </p>
+      </div>
     </section>
   </Layout>
 </template>
@@ -58,10 +70,16 @@ import Layout from './Layout.vue';
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .feature-card {
   padding: 2rem;
   background-color: white;
-  color: #1e3a8a; /* Dark blue text color */
+  color: #181818; /* Dark blue text color */
   border-radius: 0.5rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;

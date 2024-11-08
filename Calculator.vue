@@ -1,3 +1,4 @@
+<!-- Updated template -->
 <template>
   <Layout>
     <div class="flex items-center justify-center min-h-screen bg-gray-900">
@@ -10,8 +11,10 @@
             readonly
             class="w-full p-8 mb-4 text-right text-5xl font-mono border-0 rounded-lg bg-gray-900 text-gray-100 shadow-inner focus:outline-none"
           />
-          <hr>
+          <!-- Add a margin to the hr element -->
+          <hr class="my-6 border-gray-700">
           <div class="grid grid-cols-4 gap-4">
+            <!-- Buttons layout remains the same -->
             <button class="span-2" @click="handleClick('C')">C</button>
             <button @click="handleClick('(')">(</button>
             <button @click="handleClick(')')">)</button>
@@ -136,5 +139,10 @@ button.equals {
 
 button.equals:hover {
   background-color: #2ecc71;
+}
+
+/* Adjust margin for the hr element */
+hr {
+  margin: 1.5rem 0; /* Add vertical margin to create space */
 }
 </style>
